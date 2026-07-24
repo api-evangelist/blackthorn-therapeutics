@@ -1,8 +1,24 @@
 aid: blackthorn-therapeutics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blackthorn-therapeutics.png
 name: BlackThorn Therapeutics *
-description: 'BlackThorn Therapeutics * is a company surfaced as a portfolio company of gv and added to
-  the API Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'BlackThorn Therapeutics was a clinical-stage biopharmaceutical company founded in 2015 and
+  headquartered in South San Francisco, focused on discovering and developing targeted therapeutics for
+  brain diseases and central nervous system (CNS) disorders such as major depressive disorder and
+  schizophrenia, using a precision-medicine platform. It was backed by gv (Google Ventures) and later
+  combined into Neumora Therapeutics, whose corporate site now resolves at neumoratx.com. This is a
+  life-sciences company profile: it operates no public developer API, SDK, or agent surface, so
+  API-oriented artifacts are not applicable beyond a domain-security probe of the corporate host.'
 url: https://raw.githubusercontent.com/api-evangelist/blackthorn-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Life Sciences
+- Biotechnology
+- Pharmaceuticals
+- Neuroscience
+- Central Nervous System
+- Precision Medicine
+- Clinical Stage
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/blackthorn-therapeutics-domain-security.yml
 - type: Website
   url: https://neumoratx.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
